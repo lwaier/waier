@@ -1,0 +1,150 @@
+body{color: #999;font-size: 14px; font-family: "微软雅黑","宋体",Arial;background-color: #fff;}
+/* ****************************************头部开始 *************************************/
+.top{position: fixed;top:0;left: 0;width: 100%;background-color: #fff;z-index: 100;}
+.top h1{float: left;margin-left: 5%;}
+.top img{height: 30px;float: left; margin-top: 10px;}
+/* ****************************************头部pc导航开始 *************************************/
+.top .nav{float: right;font-size: 14px;display: none;}
+.top .nav .li_y{float: left;position: relative;line-height: 50px;}
+.top .nav .li_y a{padding: 0 15px;}
+.top .nav .li_y ul{position: absolute;top: 100%;right: 0;
+text-align: center;width: 300%;background-color: #fff;display: none;}
+.top .nav .li_y ul li{border-bottom: 1px solid #33b9ff;overflow: hidden;height: 35px;line-height: 35px;
+overflow: hidden;padding: 0 15px;}
+.top .nav .li_y ul li a{padding: 0;}
+.top .nav .li_y:hover ul{display: block;}
+/* ****************************************头部phone导航开始 *************************************/
+.top .nav_m{float: right;margin-right: 5%;width: 32px;height: 50px;
+background: url(../img/nav_m.png) no-repeat center center;cursor: pointer;display: none;}
+.top .nav_m .nav_m_ul1{position: absolute;top: 50px;background-color: #fff;width: 100%;display: none;left: 0;}
+.top .nav_m:hover .nav_m_ul1{display: block;}
+.top .nav_m .nav_m_ul1 li{line-height: 30px;border-bottom: 1px solid #33b9ff;text-align: center;overflow: hidden;}
+.top .nav_m .nav_m_ul1 li a{padding: 0 15px;}
+.top .nav_m:hover{background: url(../img/nav_m2.png) no-repeat center center;}
+
+/* ****************************************banner开始 *************************************/
+.banner{background-color: #33b9ff;margin-top: 50px;}
+.middle_top{overflow: hidden;}
+.banner .banner_img{width: 90%;margin-bottom: 50px;margin-left: 5%;}
+.banner h3{text-align: center;line-height: 92px;color: #fff;margin-top: 106px;font-size: 46px;padding: 0 10px;}
+.banner p{line-height: 66px;text-align: center;margin-bottom: 27px;color: #fff;font-size: 20px;padding: 0 10px}
+/* ****************************************banner下的文字开始 *************************************/
+.wenzi{padding: 0 5%;}
+.wenzi li{float: left;overflow: hidden;}
+/* ****************************************响应式案例开始 *************************************/
+.xys{background-color: #f3f7fa;margin-top: 0px;}
+.xys img{width: 90%;margin-left: 5%;}
+.xys h3{color: #666}
+.xys p{color: #999}
+/* ****************************************服务优势开始 *************************************/
+.fwys{background-color: #fff;margin-top: 0px;}
+.fwys h3{color: #666}
+.fwys p{color: #999}
+.fwys ul{width: 100%;}
+.fwys li{float: left;margin: 2%;overflow: hidden;background-color: #f3f7fa;}
+.fwys li img{margin: 0px 4%;}
+/* ****************************************服务优势开始 *************************************/
+.tjal{background-color: #f8f8f8;}
+.tjal h3{color: #666}
+.tjal p{color: #999}
+/* ****************************************建站资讯开始 *************************************/
+.jzzx{margin-top: 0;background-color: #fff;}
+.jzzx h3{color: #666}
+.jzzx p{color: #999}
+.jzzx .middle_bottom{margin-top: 70px;padding: 0 5%;}
+.jzzx .middle_bottom ul{width: 100%;}
+.jzzx .middle_bottom li{margin: 1%;float: left;background-color: #f3f7fa;position: relative;transition: 2s;}
+.jzzx .middle_bottom li h3{color: #333;text-align: left;}
+.jzzx .middle_bottom li p{color: #999;text-align: left;}
+.jzzx .middle_bottom .jzzx_mb_right{width: 30%;position: absolute;right: 0;
+top: 0;height: 0;overflow: hidden;background-color: transparent;transition: 1s;color: #fff;text-align: right;}
+.jzzx .middle_bottom li:hover{background-color: #33b9ff;}
+.jzzx .middle_bottom li:hover h3{color: #fff;}
+.jzzx .middle_bottom li:hover p{color: #fff;}
+.jzzx .middle_bottom li:hover .jzzx_mb_right{height: 100%;}/* 依据pc端的li的高度加底边距算出 */
+/* ****************************************用户评价开始 *************************************/
+.yhpj{background: url(../img/yhpj.png) no-repeat ;-webkit-background-size: 100% 100% ;
+background-size: 100% 100%;}
+.yhpj .beijing{background-color: rgba(52,170,235,.7);padding-bottom: 20px;}
+.yhpj ul{width: 100%;overflow: hidden;}
+.yhpj li{background-color: #fff;overflow: hidden;}
+/* ****************************************联系我们开始 *************************************/
+.contact h4{height: 20px;font-size: 18px;color: #666;line-height: 20px;margin-bottom: 25px;}
+.contact p{line-height: 27px;font-size: 12px;color: #999;overflow: hidden;white-space: nowrap;
+text-overflow: ellipsis;}
+.contact_left1 p{height: 27px;}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+	.top .nav_m{display: block;}
+	.banner h3{line-height: 54px;margin-top: 36px;font-size: 30px;}
+	.banner p{line-height: 25px;text-align: center;margin-bottom: 31px;font-size: 14px;}
+	.wenzi li{width: 40%;padding: 0 5%;}
+	.wenzi li h3{text-align: center;font-size: 30px;line-height: 46px;margin-top: 29px;color: #666;}
+	.wenzi li h4{text-align: center;font-size: 14px;line-height: 28px;margin-bottom: 31px;color:#999;}
+	.fwys li{width: 46%;line-height: 50px;} 
+	.fwys li img{width: 30px;}
+	.jzzx .middle_bottom{margin-top: 36px;padding: 0 5%;}
+	.jzzx .middle_bottom li{width: 98%;}
+	.jzzx .middle_bottom li h3{line-height: 48px; font-size: 16px;padding-right: 34%;padding-left: 5%;margin-top: 0;}
+	.jzzx .jzzx_mb_right h4{line-height: 48px ;height: 48px;padding-right: 10%;overflow: hidden;font-size: 1.5em;}
+	.jzzx .jzzx_mb_right h5,.jzzx .jzzx_mb_right h6{display: none;}
+	/* .jzzx .middle_bottom .jzzx_mb_right:hover h4{color:#d81e06} */
+	.jzzx .middle_bottom li p{line-height: 19px;font-size: 12px;margin-bottom: 14px;padding: 0 5%;}
+	.yhpj li{width: 90%;margin-left: 5%;margin-bottom: 10px;font-size: 12px;}
+	.yhpj li h3{line-height: 55px;font-size: 18px;padding-left: 5%;color: #666;text-align: left;height: 55px;margin-top: 0;}
+	.yhpj li h3 img{margin-right: 3%;width: 25px;}
+	.yhpj li p{line-height: 22px;font-size: 14px;padding-left:5% ;color: #999;text-align: left;}
+	.yhpj ul{margin-top: 5px;}
+	.contact{padding: 0 5%;}
+	.contact_left{width: 100%;overflow: hidden;}
+	.contact_left1{width: 38%;padding: 0 6%;float: left;}
+	.contact h4{margin-top: 37px;}
+	.contact_right{width: 100%;text-align: center;margin-top: 30px;}
+	.contact .middle{padding-bottom: 37px;}
+	.foot{padding: 0 5%;}
+	.middle{text-align:left;line-height: 16px;font-size: 12px;color: #999;
+	padding-top: 12px;border-top: 1px solid #999;padding-bottom: 34px;}
+}
+
+@media screen and (min-width:1025px){
+	.top .nav{display: block;}
+	.wenzi li{width: 21%;padding: 0 2%;}
+	.wenzi li h3{text-align: center;font-size: 40px;line-height: 85px;margin-top: 79px;color: #666;}
+	.wenzi li h4{text-align: center;font-size: 20px;line-height: 56px;margin-bottom: 28px;color:#999;}
+	.fwys li{width: 29.3333%;line-height: 108px;font-size: 20px;}
+	.fwys li img{width: 50px;}
+	.jzzx .middle_bottom li{width: 31.3333%;}
+	.jzzx .middle_bottom li h3{line-height: 54px; font-size: 16px;margin-bottom: 26px;
+	margin-top: 0px;padding-right: 34%;}/* 依据pc端的h3的高度加底边距算出 */
+	.jzzx .middle_bottom li p{line-height: 19px;font-size: 12px;margin-bottom:35px;padding-right: 34%;}
+	
+	.jzzx .jzzx_mb_right h4{line-height: 35px ;margin-top: 14px;padding-right: 10%;overflow: hidden;font-size: 1.5em;height: 35px;}
+	.jzzx .jzzx_mb_right h5{height: 23px;line-height: 23px;padding-right: 10%;font-size: .5em;}
+	.jzzx .jzzx_mb_right h6{margin-right: 10%;margin-top: 8px;height: 42px;background: url(../img/yj.png) no-repeat right center;}
+	.jzzx .middle_bottom .jzzx_mb_right:hover h6{background: url(../img/yj2.png) no-repeat right center;}
+	.jzzx .middle_bottom .jzzx_mb_right:hover h4{color:#d81e06}
+	.jzzx .middle_bottom .jzzx_mb_right:hover h5{color:#d81e06}
+	.yhpj li{width: 74%;margin-left: 13%;margin-bottom: 25px;font-size: 16px;margin-bottom: 40px;}
+	.yhpj li h3{line-height: 72px;font-size: 18px;padding-left: 5%;color: #666;text-align: left;height: 72px;margin-top: 0;}
+	.yhpj li h3 img{margin-right: 3%;width: 24px;}
+	.yhpj li p{line-height: 20px;font-size: 16px;padding-left:5% ;color: #999;text-align: left;}
+	.yhpj ul{margin-top: 40px;}
+	.contact .middle{padding-top: 100px;padding-bottom: 90px;}
+	.contact_left{width: 60%;float: left;}
+	.contact_left1{width: 20%;padding-right: 3%;float: left;padding-left: 2%;}
+	.contact_right{width: 35%;text-align: center;float: right;padding-right: 5%;}	
+	.foot{border-top: 1px solid #999;}
+	.foot .middle{padding-right: 10%;text-align: right;line-height: 60px;}
+}
+@media screen and (min-width:1230px){
+	.middle{width: 1200px; margin-left: auto;margin-right: auto;}
+	
+}
